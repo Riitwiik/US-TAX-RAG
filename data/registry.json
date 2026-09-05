@@ -1,0 +1,57 @@
+{
+  "e329d2a7ae8f4f91dc85cc4049f97f57": {
+    "document_id": "e329d2a7ae8f4f91dc85cc4049f97f57",
+    "document_name": "US_Constitution_Transcript.pdf",
+    "sha256": "96abc06ca58af8738513b994b038919211e54372a73fbcc22a54e025c06f5101",
+    "number_of_pages": 14,
+    "number_of_chunks": 69,
+    "indexed_at": 1788600797.6236598,
+    "embedding_status": "success",
+    "parse_status": "success",
+    "error_message": ""
+  },
+  "d7066f8c0f40024f7626542a8b054b00": {
+    "document_id": "d7066f8c0f40024f7626542a8b054b00",
+    "document_name": "Federalist_No_78_The_Judiciary_Department.pdf",
+    "sha256": "8cc6f50e35620fefeb4d3d4383550999cd3348fbdaf6d4c8feb5b3c64b689a48",
+    "number_of_pages": 5,
+    "number_of_chunks": 35,
+    "indexed_at": 1788606159.646154,
+    "embedding_status": "success",
+    "parse_status": "success",
+    "error_message": ""
+  },
+  "58a18a00e71545fa2ff24a73d8885d2b": {
+    "document_id": "58a18a00e71545fa2ff24a73d8885d2b",
+    "document_name": "Miranda_v_Arizona_384US436_1966.pdf",
+    "sha256": "28fce32c7a908cdfff950134b0b0384b5f26955df0c873b3403afaaa4f7390ae",
+    "number_of_pages": 19,
+    "number_of_chunks": 166,
+    "indexed_at": 1788609676.6182334,
+    "embedding_status": "success",
+    "parse_status": "success",
+    "error_message": ""
+  },
+  "32ab28293820f4b93769093071dae07d": {
+    "document_id": "32ab28293820f4b93769093071dae07d",
+    "document_name": "IRS_Tax_Topic_Guidance.pdf",
+    "sha256": "f9b23a645ca833a434919d1d450d44091aebce99e6008c6b0260a5710be4a443",
+    "number_of_pages": 5,
+    "number_of_chunks": 27,
+    "indexed_at": 1788612635.538433,
+    "embedding_status": "success",
+    "parse_status": "success",
+    "error_message": ""
+  },
+  "b01424fcf53d37c51373eb427467122f": {
+    "document_id": "b01424fcf53d37c51373eb427467122f",
+    "document_name": "Internal_Revenue_Code_Title_26_Excerpts.pdf",
+    "sha256": "9e2887913bc574a89edfac14efdef402b7665cbc1ddf6473a30b79f7caceeb9a",
+    "number_of_pages": 45,
+    "number_of_chunks": 171,
+    "indexed_at": 1788614793.1246052,
+    "embedding_status": "success",
+    "parse_status": "success",
+    "error_message": ""
+  }
+}

@@ -1,0 +1,135 @@
+2026-09-05 14:49:44,949 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 15:02:22,815 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 15:03:54,207 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 15:03:54,213 | WARNING | Map summary failed for batch pp.1-2: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,217 | WARNING | Map summary failed for batch pp.2-4: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,220 | WARNING | Map summary failed for batch pp.4-5: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,225 | WARNING | Map summary failed for batch pp.5-7: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,230 | WARNING | Map summary failed for batch pp.7-8: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,235 | WARNING | Map summary failed for batch pp.8-11: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,239 | WARNING | Map summary failed for batch pp.11-12: Missing HF_LLM_TOKEN
+2026-09-05 15:03:54,241 | WARNING | Map summary failed for batch pp.13-14: Missing HF_LLM_TOKEN
+2026-09-05 15:10:01,985 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 15:10:18,662 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 15:10:18,666 | WARNING | Map summary failed for batch pp.1-2: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,671 | WARNING | Map summary failed for batch pp.2-4: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,676 | WARNING | Map summary failed for batch pp.4-5: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,681 | WARNING | Map summary failed for batch pp.5-7: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,686 | WARNING | Map summary failed for batch pp.7-8: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,689 | WARNING | Map summary failed for batch pp.8-11: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,692 | WARNING | Map summary failed for batch pp.11-12: Missing HF_LLM_TOKEN
+2026-09-05 15:10:18,695 | WARNING | Map summary failed for batch pp.13-14: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,083 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 15:10:19,089 | WARNING | Map summary failed for batch pp.1-2: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,094 | WARNING | Map summary failed for batch pp.2-4: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,099 | WARNING | Map summary failed for batch pp.4-5: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,104 | WARNING | Map summary failed for batch pp.5-7: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,108 | WARNING | Map summary failed for batch pp.7-8: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,113 | WARNING | Map summary failed for batch pp.8-11: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,117 | WARNING | Map summary failed for batch pp.11-12: Missing HF_LLM_TOKEN
+2026-09-05 15:10:19,121 | WARNING | Map summary failed for batch pp.13-14: Missing HF_LLM_TOKEN
+2026-09-05 15:15:56,726 | WARNING | LLM unavailable (Missing HF_LLM_TOKEN); using extractive fallback
+2026-09-05 16:28:57,041 | WARNING | Remote embedding probe failed: ConnectionError: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/BAAI/bge-small-en-v1.5 (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
+2026-09-05 16:29:08,834 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 16:32:07,298 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 16:32:07,413 | WARNING | Map summary failed for batch pp.1-2: ConnectionError
+2026-09-05 16:32:07,422 | WARNING | Map summary failed for batch pp.2-4: ConnectionError
+2026-09-05 16:32:07,429 | WARNING | Map summary failed for batch pp.4-5: ConnectionError
+2026-09-05 16:32:07,437 | WARNING | Map summary failed for batch pp.5-7: ConnectionError
+2026-09-05 16:32:07,446 | WARNING | Map summary failed for batch pp.7-8: ConnectionError
+2026-09-05 16:32:07,454 | WARNING | Map summary failed for batch pp.8-11: ConnectionError
+2026-09-05 16:32:07,461 | WARNING | Map summary failed for batch pp.11-12: ConnectionError
+2026-09-05 16:32:07,468 | WARNING | Map summary failed for batch pp.13-14: ConnectionError
+2026-09-05 16:32:55,319 | INFO | Summarizing Federalist_No_78_The_Judiciary_Department.pdf: 4 batches
+2026-09-05 16:32:55,491 | WARNING | Map summary failed for batch pp.1-2: ConnectionError
+2026-09-05 16:32:55,497 | WARNING | Map summary failed for batch pp.2-3: ConnectionError
+2026-09-05 16:32:55,502 | WARNING | Map summary failed for batch pp.3-4: ConnectionError
+2026-09-05 16:32:55,509 | WARNING | Map summary failed for batch pp.4-5: ConnectionError
+2026-09-05 16:36:51,100 | WARNING | LLM unavailable (LLM request failed: ConnectionError); using extractive fallback
+2026-09-05 17:08:09,196 | WARNING | Remote embedding probe failed: ConnectionError: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/BAAI/bge-small-en-v1.5 (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
+2026-09-05 17:08:19,625 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 17:09:14,199 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 17:09:14,311 | WARNING | Map summary failed for batch pp.1-2: ConnectionError
+2026-09-05 17:09:14,323 | WARNING | Map summary failed for batch pp.2-4: ConnectionError
+2026-09-05 17:09:14,330 | WARNING | Map summary failed for batch pp.4-5: ConnectionError
+2026-09-05 17:09:14,338 | WARNING | Map summary failed for batch pp.5-7: ConnectionError
+2026-09-05 17:09:14,347 | WARNING | Map summary failed for batch pp.7-8: ConnectionError
+2026-09-05 17:09:14,356 | WARNING | Map summary failed for batch pp.8-11: ConnectionError
+2026-09-05 17:09:14,366 | WARNING | Map summary failed for batch pp.11-12: ConnectionError
+2026-09-05 17:09:14,373 | WARNING | Map summary failed for batch pp.13-14: ConnectionError
+2026-09-05 17:11:40,176 | INFO | Summarizing Federalist_No_78_The_Judiciary_Department.pdf: 4 batches
+2026-09-05 17:11:40,423 | WARNING | Map summary failed for batch pp.1-2: ConnectionError
+2026-09-05 17:11:40,433 | WARNING | Map summary failed for batch pp.2-3: ConnectionError
+2026-09-05 17:11:40,439 | WARNING | Map summary failed for batch pp.3-4: ConnectionError
+2026-09-05 17:11:40,447 | WARNING | Map summary failed for batch pp.4-5: ConnectionError
+2026-09-05 17:30:40,932 | WARNING | Remote embedding probe failed: ConnectionError: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/BAAI/bge-small-en-v1.5 (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
+2026-09-05 17:30:52,161 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 17:31:49,766 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 17:31:49,877 | WARNING | Map summary failed for batch pp.1-2: ConnectionError
+2026-09-05 17:31:49,886 | WARNING | Map summary failed for batch pp.2-4: ConnectionError
+2026-09-05 17:31:49,895 | WARNING | Map summary failed for batch pp.4-5: ConnectionError
+2026-09-05 17:31:49,902 | WARNING | Map summary failed for batch pp.5-7: ConnectionError
+2026-09-05 17:31:49,914 | WARNING | Map summary failed for batch pp.7-8: ConnectionError
+2026-09-05 17:31:49,922 | WARNING | Map summary failed for batch pp.8-11: ConnectionError
+2026-09-05 17:31:49,930 | WARNING | Map summary failed for batch pp.11-12: ConnectionError
+2026-09-05 17:31:49,935 | WARNING | Map summary failed for batch pp.13-14: ConnectionError
+2026-09-05 17:35:07,245 | INFO | Summarizing Miranda_v_Arizona_384US436_1966.pdf: 20 batches
+2026-09-05 17:35:07,367 | WARNING | Map summary failed for batch pp.1-2: ConnectionError
+2026-09-05 17:35:07,374 | WARNING | Map summary failed for batch pp.2-3: ConnectionError
+2026-09-05 17:35:07,380 | WARNING | Map summary failed for batch pp.3-3: ConnectionError
+2026-09-05 17:35:07,387 | WARNING | Map summary failed for batch pp.4-4: ConnectionError
+2026-09-05 17:35:07,394 | WARNING | Map summary failed for batch pp.5-5: ConnectionError
+2026-09-05 17:35:07,401 | WARNING | Map summary failed for batch pp.5-6: ConnectionError
+2026-09-05 17:35:07,410 | WARNING | Map summary failed for batch pp.6-7: ConnectionError
+2026-09-05 17:35:07,419 | WARNING | Map summary failed for batch pp.7-8: ConnectionError
+2026-09-05 17:35:07,429 | WARNING | Map summary failed for batch pp.8-9: ConnectionError
+2026-09-05 17:35:07,436 | WARNING | Map summary failed for batch pp.9-10: ConnectionError
+2026-09-05 17:35:07,442 | WARNING | Map summary failed for batch pp.10-11: ConnectionError
+2026-09-05 17:35:07,449 | WARNING | Map summary failed for batch pp.11-12: ConnectionError
+2026-09-05 17:35:07,455 | WARNING | Map summary failed for batch pp.12-13: ConnectionError
+2026-09-05 17:35:07,463 | WARNING | Map summary failed for batch pp.13-14: ConnectionError
+2026-09-05 17:35:07,472 | WARNING | Map summary failed for batch pp.14-15: ConnectionError
+2026-09-05 17:35:07,482 | WARNING | Map summary failed for batch pp.15-16: ConnectionError
+2026-09-05 17:35:07,492 | WARNING | Map summary failed for batch pp.16-17: ConnectionError
+2026-09-05 17:35:07,500 | WARNING | Map summary failed for batch pp.17-18: ConnectionError
+2026-09-05 17:35:07,509 | WARNING | Map summary failed for batch pp.18-19: ConnectionError
+2026-09-05 17:35:07,513 | WARNING | Map summary failed for batch pp.19-19: ConnectionError
+2026-09-05 17:35:07,513 | INFO | Hierarchical reduction: 4 groups
+2026-09-05 17:44:05,012 | INFO | Embedding backend: remote HF Inference API for BAAI/bge-small-en-v1.5
+2026-09-05 17:44:28,629 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 17:44:56,315 | INFO | Hierarchical reduction: 2 groups
+2026-09-05 17:53:43,342 | WARNING | Remote embedding failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/hf-inference/models/BAAI/bge-small-en-v1.5/pipeline/feature-extraction' (Request ID: Root=1-6a9c09ce-3a36988d2cd2ddbe42a8b664;3c338ece-a411-4ec9-8fb8-46baba138ef7)
+For more inform
+2026-09-05 17:53:43,343 | WARNING | Remote embedding probe failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/hf-inference/models/BAAI/bge-small-en-v1.5/pipeline/feature-extraction' (Request ID: Root=1-6a9c09ce-3a36988d2cd2ddbe42a8b664;3c338ece-a411-4ec9-8fb8-46baba138ef7)
+For more inform
+2026-09-05 17:53:52,433 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 17:54:24,733 | INFO | Summarizing Federalist_No_78_The_Judiciary_Department.pdf: 4 batches
+2026-09-05 17:54:25,194 | WARNING | Map summary failed for batch pp.1-2: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c09f8-0a0f246b2a9be351390e1b5f;db2df87c-2d9f-4737-97d9-4b9567c921de)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 17:54:25,542 | WARNING | Map summary failed for batch pp.2-3: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c09f8-62a2de5f5183a3094585635c;d8404a16-54ae-4641-9bf7-f361c3bd1326)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 17:54:25,918 | WARNING | Map summary failed for batch pp.3-4: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c09f9-69c08d17691375957807821d;3815afb9-6299-4507-bfbb-d8fb015c4d43)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 17:54:26,250 | WARNING | Map summary failed for batch pp.4-5: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c09f9-1a8547eb2a93f59b5f9d9380;4dbfed20-dd77-4500-9fd9-4e5d75312ab6)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 18:19:32,682 | WARNING | Remote embedding failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/hf-inference/models/BAAI/bge-small-en-v1.5/pipeline/feature-extraction' (Request ID: Root=1-6a9c0fdb-331eb53c196030540169c59e;a91f3083-d233-4411-a578-2243c1fdfc36)
+For more inform
+2026-09-05 18:19:32,691 | WARNING | Remote embedding probe failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/hf-inference/models/BAAI/bge-small-en-v1.5/pipeline/feature-extraction' (Request ID: Root=1-6a9c0fdb-331eb53c196030540169c59e;a91f3083-d233-4411-a578-2243c1fdfc36)
+For more inform
+2026-09-05 18:19:40,945 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 18:21:32,633 | INFO | Summarizing IRS_Tax_Topic_Guidance.pdf: 3 batches
+2026-09-05 18:21:33,149 | WARNING | Map summary failed for batch pp.1-2: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c1054-02ad5ca47aaa7a09157ae4cd;53be58eb-cd49-43b7-a0f1-7e16137c498a)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 18:21:33,436 | WARNING | Map summary failed for batch pp.2-3: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c1054-2b040ca91093d6bf59da98d4;8f668781-cff8-4b8c-8556-892271af1cf1)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 18:21:33,727 | WARNING | Map summary failed for batch pp.3-5: LLM request failed: HfHubHTTPError: Client error '401 Unauthorized' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6a9c1055-04f0f6ed59cc3f963684dd18;4ca43c69-b26d-4ff3-b610-8b768db01d5c)
+For more information check: https://developer.mozilla.org/en-US/do
+2026-09-05 18:39:30,966 | INFO | Embedding backend: remote HF Inference API for BAAI/bge-small-en-v1.5
+2026-09-05 18:41:19,920 | INFO | Summarizing US_Constitution_Transcript.pdf: 8 batches
+2026-09-05 18:41:46,235 | INFO | Hierarchical reduction: 2 groups
+2026-09-05 18:53:49,930 | WARNING | Remote embedding probe failed: ConnectionError: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/BAAI/bge-small-en-v1.5 (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno 11001] getaddrinfo failed)"))
+2026-09-05 18:54:01,218 | INFO | Embedding backend: local sentence-transformers for BAAI/bge-small-en-v1.5 (dim=384)
+2026-09-05 18:57:47,950 | INFO | Summarizing Internal_Revenue_Code_Title_26_Excerpts.pdf: 19 batches
+2026-09-05 19:03:42,594 | INFO | Hierarchical reduction: 4 groups
+2026-09-05 19:19:01,387 | INFO | Embedding backend: remote HF Inference API for BAAI/bge-small-en-v1.5
+2026-09-05 19:19:36,889 | INFO | Summarizing IRS_Tax_Topic_Guidance.pdf: 3 batches
