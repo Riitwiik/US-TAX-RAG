@@ -1,0 +1,41 @@
+# US Tax & Legal RAG — .gitignore
+#
+# IMPORTANT: never accidentally track secrets or persisted user data.
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python caches ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+
+# --- Runtime / persisted user data ---
+# Everything user-uploaded + derived indexes lives under data/.
+# Keep only data/README.md tracked.
+data/*
+!data/README.md
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS noise ---
+.DS_Store
+Thumbs.db
+
+# --- Editor noise ---
+.vscode/
+.idea/
+*.swp

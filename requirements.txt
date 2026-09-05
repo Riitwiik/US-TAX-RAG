@@ -1,0 +1,32 @@
+# US Tax & Legal RAG — requirements.txt
+#
+# Target: Python 3.12
+# All packages below are open source (MIT / Apache-2.0 / BSD-3 / similar).
+# The models used (BAAI/bge-small-en-v1.5 and Qwen/Qwen3-8B) are open weights
+# and are accessed via the Hugging Face free Inference API (no GPU required).
+#
+# Versions selected based on Python 3.12 compatibility but not locally verified
+# against every transitive dependency. Tested locally with the versions shown.
+#
+# CPU-only torch is intentional — we never run Qwen3-8B locally; BGE-small can
+# run on CPU when the HF embedding endpoint is unavailable as a graceful
+# fallback. Install torch CPU wheels from:
+#   https://download.pytorch.org/whl/cpu
+# or use the index URL below when installing:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch
+
+streamlit>=1.31,<2.0
+PyMuPDF>=1.24,<2.0
+sentence-transformers>=3.0,<7.0
+transformers>=4.40,<6.0
+huggingface-hub>=0.23,<2.0
+# torch CPU only — install via: pip install --index-url https://download.pytorch.org/whl/cpu torch
+torch>=2.2,<3.0
+faiss-cpu>=1.8,<2.0
+rank-bm25>=0.2.2,<1.0
+numpy>=1.26,<3.0
+pandas>=2.0,<4.0
+requests>=2.31,<3.0
+torchvision
+python-dotenv
+huggingface_hub
