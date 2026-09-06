@@ -358,7 +358,7 @@ BM25_MIN_SCORE = env_float(
 
 SUMMARY_BATCH_CHARS = env_int(
     "SUMMARY_BATCH_CHARS",
-    6000
+    10000
 )
 
 SUMMARY_MAX_CONTEXT_CHARS = env_int(
