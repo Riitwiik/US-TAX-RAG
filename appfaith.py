@@ -135,12 +135,12 @@ REGISTRY_FILE: str = os.path.join(DATA_DIR, "registry.json")
 CHUNKS_FILE: str = os.path.join(DATA_DIR, "chunks.json")
 INDEX_FILE: str = os.path.join(DATA_DIR, "faiss.index")
 META_FILE: str = os.path.join(DATA_DIR, "meta.json")
-LOG_FILE: str = os.path.join(DATA_DIR, "app.log")
+LOG_FILE: str = os.path.join(DATA_DIR, "app.log")"""
 
 # --- Caching / fallback switches ---
-ALLOW_LOCAL_EMBEDDING_FALLBACK: bool = os.environ.get(
+#ALLOW_LOCAL_EMBEDDING_FALLBACK: bool = os.environ.get(
     "ALLOW_LOCAL_EMBEDDING_FALLBACK", "true"
-).lower() == "true""""
+).lower() == "true"
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
