@@ -86,61 +86,7 @@ except Exception:
 # =============================================================================
 
 # --- Models (free / open source) ---
-"""EMBEDDING_MODEL: str = os.environ.get("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
-LLM_MODEL: str = os.environ.get("LLM_MODEL", "Qwen/Qwen3-8B")
-EMBEDDING_DIM: int = int(os.environ.get("EMBEDDING_DIM", "384"))  # bge-small = 384
 
-# --- Hugging Face endpoints ---
-# Two SEPARATE tokens: one for embeddings, one for the LLM.
-# Both free-tier friendly; both usable with open-source models on HF Inference API.
-HF_EMBEDDING_TOKEN_ENV: str = "HF_EMBEDDING_TOKEN"
-HF_LLM_TOKEN_ENV: str = "HF_LLM_TOKEN"
-
-# Default HF Inference API base (free tier).
-HF_INFERENCE_BASE: str = "https://api-inference.huggingface.co/models"
-
-# --- Chunking ---
-CHUNK_SIZE: int = int(os.environ.get("CHUNK_SIZE", "700"))        # characters
-CHUNK_OVERLAP: int = int(os.environ.get("CHUNK_OVERLAP", "120"))  # characters
-MIN_CHUNK_CHARS: int = 80
-MAX_CHUNK_CHARS: int = 2000
-
-# --- Retrieval ---
-DENSE_TOP_K: int = int(os.environ.get("DENSE_TOP_K", "20"))
-BM25_TOP_K: int = int(os.environ.get("BM25_TOP_K", "20"))
-FINAL_TOP_K: int = int(os.environ.get("FINAL_TOP_K", "8"))
-RRF_K: int = int(os.environ.get("RRF_K", "60"))
-
-# --- Abstention ---
-# BGE-small cosine (normalized inner product) typically ranges 0.2-0.8 for
-# relevant passages. We expose this as configurable; calibrate on your corpus.
-ABSTENTION_THRESHOLD: float = float(os.environ.get("ABSTENTION_THRESHOLD", "0.30"))
-BM25_MIN_SCORE: float = float(os.environ.get("BM25_MIN_SCORE", "1.0"))
-
-# --- Summarization ---
-SUMMARY_BATCH_CHARS: int = int(os.environ.get("SUMMARY_BATCH_CHARS", "6000"))
-SUMMARY_MAX_CONTEXT_CHARS: int = int(os.environ.get("SUMMARY_MAX_CONTEXT_CHARS", "12000"))
-HIERARCHICAL_GROUP_SIZE: int = int(os.environ.get("HIERARCHICAL_GROUP_SIZE", "5"))
-
-# --- LLM HTTP ---
-LLM_TIMEOUT_S: int = int(os.environ.get("LLM_TIMEOUT_S", "60"))
-LLM_MAX_TOKENS: int = int(os.environ.get("LLM_MAX_TOKENS", "700"))
-LLM_TEMPERATURE: float = float(os.environ.get("LLM_TEMPERATURE", "0.2"))
-EMBEDDING_TIMEOUT_S: int = int(os.environ.get("EMBEDDING_TIMEOUT_S", "30"))
-EMBEDDING_MAX_RETRIES: int = 3
-
-# --- Persistence ---
-DATA_DIR: str = os.environ.get("DATA_DIR", "data")
-REGISTRY_FILE: str = os.path.join(DATA_DIR, "registry.json")
-CHUNKS_FILE: str = os.path.join(DATA_DIR, "chunks.json")
-INDEX_FILE: str = os.path.join(DATA_DIR, "faiss.index")
-META_FILE: str = os.path.join(DATA_DIR, "meta.json")
-LOG_FILE: str = os.path.join(DATA_DIR, "app.log")"""
-
-# --- Caching / fallback switches ---
-#ALLOW_LOCAL_EMBEDDING_FALLBACK: bool = os.environ.get(
- #   "ALLOW_LOCAL_EMBEDDING_FALLBACK", "true"
-#).lower() == "true"
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
