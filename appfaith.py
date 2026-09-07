@@ -2107,7 +2107,7 @@ def _llm_faithfulness_verdict(answer: str, evidence: list[RetrievalHit]) -> tupl
         client = InferenceClient(api_key=tok)
         response = client.chat_completion(
             messages=[{"role": "user", "content": judge_prompt}],
-            model=LLM_MODEL,
+            model="meta-llama/Llama-3.2-3B-Instruct",
             max_tokens=800,
             temperature=0.0,
         )
