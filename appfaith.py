@@ -165,10 +165,6 @@ BASE_DIR = Path(__file__).resolve().parent
 # Loads .env when running locally.
 # On Streamlit Cloud, st.secrets is used as a fallback.
 load_dotenv(BASE_DIR / ".env")
-print("ENV PATH:", BASE_DIR / ".env")
-print("ENV EXISTS:", (BASE_DIR / ".env").is_file())
-print("HF_LLM_TOKEN loaded:", bool(os.getenv("HF_LLM_TOKEN")))
-print("HF_EMBEDDING_TOKEN loaded:", bool(os.getenv("HF_EMBEDDING_TOKEN")))
 
 # =============================================================================
 # CONFIGURATION HELPERS
