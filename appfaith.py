@@ -2175,8 +2175,7 @@ def evaluate_golden_set(kb: KnowledgeBase, golden: pd.DataFrame,
             })
             continue
         # Hit@K
-        hit = any(h.document_name == truth_doc or _pages_overlap([h.page_number], truth_pages)
-                   for h in hits)
+        hit = any(h.document_name == truth_doc and(not truth_pages or h.page_number in truth_pages)for h in hits)
         if hit:
             hit_count += 1
         # Recall@K (fraction of truth pages covered by retrieved pages of truth_doc)
@@ -2189,7 +2188,10 @@ def evaluate_golden_set(kb: KnowledgeBase, golden: pd.DataFrame,
         # MRR: rank 1 / position of first hit in hits list (hits already sorted by rrf desc)
         rr = 0.0
         for rank, h in enumerate(hits, start=1):
-            if h.document_name == truth_doc or h.page_number in truth_pages:
+            if (
+        h.document_name == truth_doc and
+        (not truth_pages or h.page_number in truth_pages)
+    ):
                 rr = 1.0 / rank
                 break
         mrr_sum += rr
