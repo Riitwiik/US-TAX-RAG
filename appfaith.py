@@ -86,7 +86,7 @@ except Exception:
 # =============================================================================
 
 # --- Models (free / open source) ---
-'''EMBEDDING_MODEL: str = os.environ.get("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
+"""EMBEDDING_MODEL: str = os.environ.get("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
 LLM_MODEL: str = os.environ.get("LLM_MODEL", "Qwen/Qwen3-8B")
 EMBEDDING_DIM: int = int(os.environ.get("EMBEDDING_DIM", "384"))  # bge-small = 384
 
@@ -140,7 +140,7 @@ LOG_FILE: str = os.path.join(DATA_DIR, "app.log")
 # --- Caching / fallback switches ---
 ALLOW_LOCAL_EMBEDDING_FALLBACK: bool = os.environ.get(
     "ALLOW_LOCAL_EMBEDDING_FALLBACK", "true"
-).lower() == "true"'''
+).lower() == "true""""
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
