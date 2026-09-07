@@ -485,28 +485,7 @@ log = _safe_logger()
 # 4. SECRET HELPERS  (read from env / Streamlit secrets — never hardcode)
 # =============================================================================
 
-'''def _read_secret(name: str) -> str:
-    """Read a secret from environment or Streamlit secrets, returning '' if absent.
 
-    Never logs or exposes the value. Only checks for *presence*.
-    """
-    val = os.environ.get(name, "")
-    if not val and st is not None:
-        try:
-            val = st.secrets.get(name, "")  # type: ignore[attr-defined]
-        except Exception:
-            val = ""
-    if val and not isinstance(val, str):
-        val = str(val)
-    return (val or "").strip()
-
-
-def get_embedding_token() -> str:
-    return _read_secret(HF_EMBEDDING_TOKEN_ENV)
-
-
-def get_llm_token() -> str:
-    return _read_secret(HF_LLM_TOKEN_ENV)'''
 
 def _read_secret(name: str) -> str:
     """
@@ -1557,73 +1536,6 @@ QWEN_SYSTEM_PROMPT = (
 )
 
 
-'''def llm_answer(query: str, evidence: list[RetrievalHit], max_tokens: int = LLM_MAX_TOKENS) -> tuple[str, str, str]:
-    """Returns (text, mode, error). mode is 'qwen' on success, 'fallback' or 'error' otherwise."""
-    tok = get_llm_token()
-    if not tok:
-        return "", "error", "Missing HF_LLM_TOKEN"
-    if not evidence:
-        return "", "error", "No evidence provided to LLM"
-    evidence_block = _format_evidence_for_llm(evidence)
-    user_prompt = (
-        f"User question:\n{query}\n\n"
-        f"Retrieved evidence (each item shows source document and original page):\n"
-        f"{evidence_block}\n\n"
-        f"Answer the user question using ONLY the evidence above. "
-        f"If the evidence is insufficient, respond: "
-        f"'The available documents do not contain sufficient evidence to answer this question reliably.'\n"
-    )
-    endpoint = f"{HF_INFERENCE_BASE}/{LLM_MODEL}"
-    headers = {
-        "Authorization": f"Bearer {tok}",
-        "Content-Type": "application/json",
-    }
-    payload = {
-        "inputs": user_prompt,
-        "parameters": {
-            "max_new_tokens": max_tokens,
-            "temperature": LLM_TEMPERATURE,
-            "return_full_text": False,
-            "do_sample": LLM_TEMPERATURE > 0,
-        },
-        "options": {"wait_for_model": True},
-    }
-    # quick try as a chat-completions-style request; HF Inference API returns generated_text
-    try:
-        for attempt in range(1, 4):
-            r = requests.post(endpoint, headers=headers, json=payload, timeout=LLM_TIMEOUT_S)
-            if r.status_code == 503:
-                time.sleep(min(2 ** attempt, 8)); continue
-            if r.status_code == 429:
-                time.sleep(min(2 ** attempt, 10)); continue
-            if r.status_code == 401 or r.status_code == 403:
-                return "", "error", f"LLM auth failed (HTTP {r.status_code})"
-            if r.status_code == 404:
-                return "", "error", "LLM endpoint not found (HTTP 404)"
-            if r.status_code >= 500:
-                return "", "error", f"LLM server error (HTTP {r.status_code})"
-            if r.status_code != 200:
-                body = r.text[:300]
-                return "", "error", f"LLM HTTP {r.status_code}: {body}"
-            data = r.json()
-            # HF "text-generation" returns [{"generated_text": "..."}]
-            if isinstance(data, list) and data and isinstance(data[0], dict):
-                txt = data[0].get("generated_text", "") or ""
-            elif isinstance(data, dict):
-                txt = data.get("generated_text", "") or data.get("text", "") or ""
-            else:
-                txt = str(data)
-            txt = txt.strip()
-            if not txt:
-                return "", "error", "LLM returned empty response"
-            return txt, "qwen", ""
-        return "", "error", "LLM endpoint busy after retries"
-    except requests.exceptions.Timeout:
-        return "", "error", "LLM request timeout"
-    except Exception as e:
-        return "", "error", f"LLM request failed: {type(e).__name__}"
-
-'''
 from huggingface_hub import InferenceClient
 
 
